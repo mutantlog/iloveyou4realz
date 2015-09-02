@@ -1,5 +1,12 @@
 var Twit  = require('twit'); // Twitter module
-var T = new Twit(require('./config.js')); // Include the configuration file
+
+var T = new Twit({ 
+	consumer_key		: process.env.ILOVEYOU4REALZ_TWIT_CONSUMER_KEY,
+	consumer_secret		: process.env.ILOVEYOU4REALZ_TWIT_CONSUMER_SECRET,
+	access_token		: process.env.ILOVEYOU4REALZ_TWIT_ACCESS_TOKEN,
+	access_token_secret	: process.env.ILOVEYOU4REALZ_TWIT_ACCESS_TOKEN_SECRET
+});
+
 
 var stream = T.stream('user')
 
