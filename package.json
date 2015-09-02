@@ -1,0 +1,29 @@
+{
+  "name": "iloveyou4realz",
+  "version": "1.0.0",
+  "description": "Twitter bot to automatically fav @ryanqnorth's tweets",
+  "main": "bot.js",
+  "dependencies": {
+    "twit": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mutantlog/iloveyou4realz.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "ryanqnorth",
+    "qwantz"
+  ],
+  "author": "Ryan Bayne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mutantlog/iloveyou4realz/issues"
+  },
+  "homepage": "https://github.com/mutantlog/iloveyou4realz#readme"
+}
