@@ -4,6 +4,7 @@
   "description": "Twitter bot to automatically fav @ryanqnorth's tweets",
   "main": "bot.js",
   "dependencies": {
+    "express": "^4.13.3",
     "twit": "^2.1.0"
   },
   "devDependencies": {},
