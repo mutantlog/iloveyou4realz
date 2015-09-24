@@ -1,23 +1,6 @@
 var Twit  = require('twit'); // Twitter module
-var express = require('express'); // This is here simply because I don't know how to avoid creating a listener for heroku
-var app = express(); 
 
-app.set('port', (process.env.PORT || 5000));
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
-
-app.get('/', function (req, res) { // Create a basic response
-  res.send('Ryan North is very tall');
-});
-
-var T = new Twit({ 
-	consumer_key		: process.env.ILOVEYOU4REALZ_TWIT_CONSUMER_KEY,
-	consumer_secret		: process.env.ILOVEYOU4REALZ_TWIT_CONSUMER_SECRET,
-	access_token		: process.env.ILOVEYOU4REALZ_TWIT_ACCESS_TOKEN,
-	access_token_secret	: process.env.ILOVEYOU4REALZ_TWIT_ACCESS_TOKEN_SECRET
-});
-
+var T = new Twit(require('./config.js'));
 
 var stream = T.stream('user')
 
